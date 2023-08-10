@@ -1,0 +1,410 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}MAKS&LIVE{% endblock %}
+
+{% block content %}
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container _container">
+            <a href="" class="header__logo">
+                Ветер свежести
+            </a>
+
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Виды уборки</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Химчистка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Цены</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Позвонить нам <br>8 (999) 55-55-88</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <a href="" class="header__logo_2">
+            Сайт выполнен с технологиями искусственного интеллекта
+        </a>
+    </header>
+    <main class="page">
+        <div class="page__main-block main-block">
+            <div class="main_block__container _container">
+                <div class="main-block__body">
+                    <h1 class="main-block__title">
+                        У НАС САМЫЕ НИЗКИЕ ЦЕНЫ
+                        </h1>
+                    <div class="main-block__text">
+                         Наша компания оказывает услуги клинига в самых разных сферах.<br>
+                         Мы собрали специалистов самой высокой подготовки, опыта и квалификации, наши сотрудники готовы вывести самые трудные загрязнения.
+
+                    </div>
+                    <div class="main-block__buttons">
+                        <a href="" class="main-block__button">Наши цены</a>
+                        <a href="" class="main-block__button main-block__button_border">Отзывы</a>
+                    </div>
+                </div>
+            </div>
+        <div class="main-block__image _ibg">
+            <img src="/media/images/Главная.png" alt="cover">
+        </div>
+        </div>
+        <section class="page__services services">
+            <div class="services__container _container">
+                <div class="services__body">
+                    <div class="services__column">
+                        <div class="services__item item-service">
+                            <h3 class="item-service__title">Поддерживающая уборка</h3>
+
+                            <button id="item_service1__text">Уборка для поддержания чистоты вашей квартиры</button>
+
+                                <div id="myModal" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                             <h2>Подробно</h2>
+                                            <p>Генеральная уборка проводится по графику. Во время генеральной уборки проводят мытьё окон, чистку радиаторов, дверей, мытьё стен, светильников, очистку мягкой мебели и других текстильных поверхностей.</p>
+                                        </div>
+                                    </div>
+                                <script>
+                                var modal = document.getElementById("myModal");
+                                var btn = document.getElementById("item_service1__text");
+                                var span = document.getElementsByClassName("close")[0];
+
+                                btn.onclick = function() {
+                                modal.style.display = "block";
+                                }
+
+                                span.onclick = function() {
+                                modal.style.display = "none";
+                                }
+
+                                window.onclick = function(event) {
+                                if (event.target === modal) {
+                                modal.style.display = "none";
+                                }
+                                }
+                                </script>
+                        </div>
+                    </div>
+                    <div class="services__column">
+                        <div class="services__item item-service">
+                            <h3 class="item-service__title">Генеральная уборка</h3>
+                            <button id="item_service2__text">Полная уборка помещений</button>
+                            <div id="myModal2" class="modal">
+                                <div class="modal-content">
+                                    <span class="close2">&times;</span>
+                                    <h2>Подробно</h2>
+                                    <p>Другая услуга описывается здесь.</p>
+                                </div>
+                            </div>
+                            <script>
+                                var modal2 = document.getElementById("myModal2");
+                                var btn2 = document.getElementById("item_service2__text");
+                                var span2 = document.getElementsByClassName("close2")[0];
+                                btn2.onclick = function() {
+                                        modal2.style.display = "block";
+                                    }
+                                span2.onclick = function() {
+                                        modal2.style.display = "none";
+                                    }
+                                window.onclick = function(event) {
+                                    if (event.target === modal2) {
+                                        modal2.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <div class="services__column">
+                        <div class="services__item item-service">
+                            <h3 class="item-service__title">Уборка после ремонта</h3>
+                            <button id="item_service3__text">Наведем порядок после ремонта</button>
+                            <div id="myModal3" class="modal">
+                                <div class="modal-content">
+                                    <span class="close3">&times;</span>
+                                    <h2>Подробно</h2>
+                                    <p>Другая услуга описывается здесь3.</p>
+                                </div>
+                            </div>
+                            <script>
+                                var modal3 = document.getElementById("myModal3");
+                                var btn3 = document.getElementById("item_service3__text");
+                                var span3 = document.getElementsByClassName("close3")[0];
+                                btn3.onclick = function() {
+                                        modal3.style.display = "block";
+                                    }
+                                span3.onclick = function() {
+                                        modal3.style.display = "none";
+                                    }
+                                window.onclick = function(event) {
+                                    if (event.target === modal3) {
+                                        modal3.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="services__body">
+                    <div class="services__column">
+                        <div class="services__item item-service">
+                            <h3 class="item-service__title">Мытье окон</h3>
+                            <button id="item_service4__text">Мытье всех или отдельных окон с двух сторон</button>
+                            <div id="myModal4" class="modal">
+                                <div class="modal-content">
+                                    <span class="close4">&times;</span>
+                                    <h2>Подробно</h2>
+                                    <p>Другая услуга описывается здесь4.</p>
+                                </div>
+                            </div>
+                            <script>
+                                var modal4 = document.getElementById("myModal4");
+                                var btn4 = document.getElementById("item_service4__text");
+                                var span4 = document.getElementsByClassName("close4")[0];
+                                btn4.onclick = function() {
+                                        modal4.style.display = "block";
+                                    }
+                                span4.onclick = function() {
+                                        modal4.style.display = "none";
+                                    }
+                                window.onclick = function(event) {
+                                    if (event.target === modal4) {
+                                        modal4.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <div class="services__column">
+                        <div class="services__item item-service">
+                            <h3 class="item-service__title">Химчистка штор</h3>
+                            <button id="item_service5__text">Отчистим ваши стороны и они будут, как новые!</button>
+                            <div id="myModal5" class="modal">
+                                <div class="modal-content">
+                                    <span class="close5">&times;</span>
+                                    <h2>Подробно</h2>
+                                    <p>Другая услуга описывается здесь5.</p>
+                                </div>
+                            </div>
+                            <script>
+                                var modal5 = document.getElementById("myModal5");
+                                var btn5 = document.getElementById("item_service5__text");
+                                var span5 = document.getElementsByClassName("close5")[0];
+                                btn5.onclick = function() {
+                                        modal5.style.display = "block";
+                                    }
+                                span5.onclick = function() {
+                                        modal5.style.display = "none";
+                                    }
+                                window.onclick = function(event) {
+                                    if (event.target === modal5) {
+                                        modal5.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <div class="services__column">
+                        <div class="services__item item-service">
+                            <h3 class="item-service__title">Уборка офисов и складских помещений</h3>
+                            <button id="item_service6__text">Ген. уборка "ВСЕ ВКЛЮЧЕНО"</button>
+                            <div id="myModal6" class="modal">
+                                <div class="modal-content">
+                                    <span class="close6">&times;</span>
+                                    <h2>Подробно</h2>
+                                    <p>Другая услуга описывается здесь6.</p>
+                                </div>
+                            </div>
+                            <script>
+                                var modal6 = document.getElementById("myModal6");
+                                var btn6 = document.getElementById("item_service6__text");
+                                var span6 = document.getElementsByClassName("close6")[0];
+                                btn6.onclick = function() {
+                                        modal6.style.display = "block";
+                                    }
+                                span6.onclick = function() {
+                                        modal6.style.display = "none";
+                                    }
+                                window.onclick = function(event) {
+                                    if (event.target === modal6) {
+                                        modal6.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="page__advantages advantages">
+            <div class="advantages__container _container">
+                <div class="advantages__header header-block">
+                    <h2 class="header-block__title">Самые частые вопросы</h2>
+                    <div class="header-block__sub-title">Наша компания предоставляет обширный реестр услуг разных типов, а так же индивидуальные услуги клининга</div>
+                </div>
+                <div class="advantages__body">
+                    <div class="advantages__column">
+                        <div class="advantages__item">
+
+                            <div class="advantages__icon">Почему вы должны выбрать нас?</div>
+                            <div class="advantages__value">Наша компания является одной из самых лучших в плане оказания услуг.</div>
+                            <div class="advantages__text">Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="advantages__column">
+                        <div class="advantages__item">
+                            <div class="advantages__icon">Есть ли у нас гарантия?</div>
+                            <div class="advantages__value">Заполняя договор по клинингу с нашей компании, есть пункт с гарантией.</div>
+                            <div class="advantages__text">Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="advantages__column">
+                        <div class="advantages__item">
+                            <div class="advantages__icon">Сколько времени займет услуга?</div>
+                            <div class="advantages__value">Для каждой уборки индивидуально, для того, чтобы знать точно сколько времени займет клининг, нажмите на кнопку "Подробнее"</div>
+                            <div class="advantages__text">Подробнее</div>
+                        </div>
+                    </div>
+                    <div class="advantages__column">
+                        <div class="advantages__item">
+                            <div class="advantages__icon">А если я хочу индивидуальный тариф?</div>
+                            <div class="advantages__value">Тариф индивидуальный составляется по звонку с нашим оператором, вам нужно оставить заявку по кнопке "Подробнее"</div>
+                            <div class="advantages__text">Подробнее</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="page__practice practice">
+            <div class="practice__container _container">
+                <div class="practice__header header-block">
+                    <h2 class="header-block__title">Чистота залог здоровья</h2>
+                    <div class="header-block__sub-title">Современная жизнь  ставит перед нами много новых проблем, среди которых особо хотелось бы выделить – сохранение и укрепление здоровья детей.</div>
+                <div style="overflow-x:auto;">
+                  <table id="table">
+                      <tr id="main_1"><th colspan="5" >УБОРКА ОФИСА НА РЕГУЛЯРНОЙ ОСНОВЕ</th></tr>
+                    <tr>
+                      <td id="kik">Тип услуги:</td>
+                      <td id="kik1">Цены:</td>
+                    </tr>
+                    <tr>
+                      <td>Поддерживающая уборка офиса	</td>
+                      <td>50р/кв.м.</td>
+                    </tr>
+                    <tr>
+                      <td>Межсезонное мытье окон для постоянных клиентов</td>
+                      <td>200р створка.</td>
+                    </tr>
+                      <tr>
+                      <td>Мытье остекления только изнутри ежемесячно	</td>
+                      <td>100р створка.</td>
+                    </tr>
+                      <tr>
+                      <td>Мытье холодильника внутри раз в месяц</td>
+                      <td>500р..</td>
+                    </tr>
+                      <tr>
+                      <td>Чистка жалюзи	</td>
+                      <td>300-500р.</td>
+                    </tr>
+                      <tr>
+                      <td>Химчистка ковролина</td>
+                      <td>150 р/кв.м</td>
+                    </tr>
+                      <tr>
+                      <td>Шторы + тюль (снятие, стирка, развешивание)</td>
+                      <td>500р/комплект</td>
+                    </tr>
+                      <tr>
+                      <td>Чистка межплиточных швов	</td>
+                      <td>150р/м</td>
+                    </tr>
+                  </table>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="page_whoweare whoweare">
+            <div class="whoweare__container _container">
+                <div class="whoweare__header header-block">
+                    <h2 class="header-block__title">Нам очень часто задают вопросы и вот некоторые ответы на них</h2>
+                    <div class="header-block__sub-title">
+
+                    </div>
+                </div>
+                <div class="whoweare_body">
+                    <div class="whoweare__video">
+                        <img src="https://img.freepik.com/free-vector/professional-cleaner-woman-with-janitor-cart_3446-541.jpg" alt="cover" width="400" height="400">
+                    </div>
+                    <div class="whoweare__content">
+                        <div class="whoweare__items">
+                            <div class="whoweare__item item-whoweare">
+                                <div class="item_whoweare__icon"></div>
+                                <div class="item_whoweare__body">
+                                    <button id="btn">Как вы рассчитываете стоимость уборки квартиры?</button>
+                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                            <script>
+                                                $("#btn").click(function(){
+                                                    $(".item_whoweare__text").toggle('show')
+                                                })
+                                            </script>
+                                        <div class="item_whoweare__text">Цены на уборку квартиры рассчитываются исходя из площади помещения, разновидности уборки, сложности загрязнений, наличие дополнительных работ, срочности заказа, количества клинеров на объект.</div>
+                                    <button id="btn_1">Как происходит процесс оплаты?</button>
+                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                            <script>
+                                                $("#btn_1").click(function(){
+                                                    $(".item_whoweare__text_1").toggle('show_1')
+                                                })
+                                            </script>
+                                        <div class="item_whoweare__text_1">В нашей компании действует пост оплатная система расчета. По окончании клининга вы проверите результат, подпишете документы о приемке и только потом заплатите клинерам по договору.</div>
+                                    <button id="btn_2">Как заказать генеральную, поддерживающую или послеремонтную уборку квартиры?</button>
+                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                            <script>
+                                                $("#btn_2").click(function(){
+                                                    $(".item_whoweare__text_2").toggle('show_2')
+                                                })
+                                            </script>
+                                        <div class="item_whoweare__text_2">Заказать качественные клининговые услуги для своей квартиры просто. Достаточно заполнить небольшой квиз на сайте или позвонить по номеру. Что входит в каждую из этих уборок можно узнать на профильных страницах сайта или уточнить у менеджера.</div>
+                                    <button id="btn_3">Как заказать генеральную, поддерживающую или послеремонтную уборку квартиры?</button>
+                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                            <script>
+                                                $("#btn_3").click(function(){
+                                                    $(".item_whoweare__text_3").toggle('show_3')
+                                                })
+                                            </script>
+                                        <div class="item_whoweare__text_3">Заказать качественные клининговые услуги для своей квартиры просто. Достаточно заполнить небольшой квиз на сайте или позвонить по номеру. Что входит в каждую из этих уборок можно узнать на профильных страницах сайта или уточнить у менеджера.</div>
+                                    <button id="btn_4">Как заказать генеральную, поддерживающую или послеремонтную уборку квартиры?</button>
+                                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                            <script>
+                                                $("#btn_4").click(function(){
+                                                    $(".item_whoweare__text_4").toggle('show_4')
+                                                })
+                                            </script>
+                                        <div class="item_whoweare__text_4">Заказать качественные клининговые услуги для своей квартиры просто. Достаточно заполнить небольшой квиз на сайте или позвонить по номеру. Что входит в каждую из этих уборок можно узнать на профильных страницах сайта или уточнить у менеджера.</div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        Подвал
+    </footer>
+</div>
+
+{% endblock %}
